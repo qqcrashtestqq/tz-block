@@ -1,0 +1,15 @@
+@use '../abstracts/mixins' as mixins;
+
+.footer {
+  display: flex;
+
+  &__inner {
+    display: flex;
+  }
+}
+
+@include mixins.mq('lg') {
+  .footer {
+    background-color: red;
+  }
+}

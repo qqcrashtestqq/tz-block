@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @include('../components/_head.html', {title: 'Главная'})
+    <meta name="description" content="content" />
+  </head>
+  <body>
+    <div class="base-layout">
+      @include('../components/_header.html')
+
+      <main class="main">
+        <button data-open-modal="test" class="button">OPEN</button>
+      </main>
+
+      @include('../components/_footer.html')
+    </div>
+
+    @include('../components/modals/_modal-template.html')
+  </body>
+</html>
