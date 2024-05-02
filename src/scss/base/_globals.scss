@@ -1,8 +1,8 @@
-@use '../abstracts/functions' as functions;
+@use "../abstracts/functions" as functions;
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 html,
@@ -23,11 +23,18 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   color: var(--color-black);
+  background: #fff;
 }
 
 .container {
   margin: 0 auto;
-  padding: 0 functions.rem(15);
+  padding: 0 functions.rem(70);
   width: 100%;
   max-width: functions.rem(1440);
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 functions.rem(30);
+  }
 }

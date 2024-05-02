@@ -1,6 +1,5 @@
-
 :root {
-  --font-family: 'Arial', sans-serif;
+  --font-family: "Arial", sans-serif;
   --app-header: 100vh;
 
   // Z-INDEX
@@ -14,4 +13,6 @@
   // COLORS
   --color-white: #fff;
   --color-black: #000;
+  --color-bg-red: rgba(230, 0, 18, 50%);
+  --color-red: #e60012;
 }
