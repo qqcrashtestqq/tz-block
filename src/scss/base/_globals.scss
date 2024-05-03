@@ -1,4 +1,11 @@
-@use "../abstracts/functions" as functions;
+@use "../abstracts/functions" as *;
+@use "../abstracts/mixins" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   box-sizing: border-box;
@@ -28,13 +35,13 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 functions.rem(70);
+  padding: 0 rem(70);
   width: 100%;
-  max-width: functions.rem(1440);
+  max-width: rem(1440);
 }
 
-@media (max-width: 992px) {
+@include mq("lg") {
   .container {
-    padding: 0 functions.rem(30);
+    padding: 0 rem(30);
   }
 }

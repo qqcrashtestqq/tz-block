@@ -7,6 +7,13 @@
   padding: rem(100) 0 rem(110);
   gap: rem(10);
 
+  &__inner {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(20);
+  }
+
   &__info {
     max-width: rem(630);
     font-weight: 400;
@@ -38,12 +45,12 @@
     max-width: rem(630);
 
     img {
-      display: block;
-      width: 100%;
-      height: 100%;
+      // display: block;
+      // width: 100%;
+      // height: 100%;
 
       // box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 25%);
-      object-fit: cover;
+      // object-fit: cover;
     }
   }
 }
